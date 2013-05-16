@@ -3,7 +3,7 @@ require 'spec_helper'
 module RailsBestPractices
   module Reviews
     describe UseQueryAttributeReview do
-      let(:runner) { Core::Runner.new(prepares: [Prepares::ModelPrepare.new, Prepares::SchemaPrepare.new], reviews: UseQueryAttributeReview.new) }
+      let(:runner) { Core::Runner.new(:prepares => [Prepares::ModelPrepare.new, Prepares::SchemaPrepare.new], :reviews => UseQueryAttributeReview.new) }
 
       before :each do
         content = <<-EOF

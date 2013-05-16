@@ -3,7 +3,7 @@ require 'spec_helper'
 module RailsBestPractices
   module Reviews
     describe HashSyntaxReview do
-      let(:runner) { Core::Runner.new(reviews: HashSyntaxReview.new) }
+      let(:runner) { Core::Runner.new(:reviews => HashSyntaxReview.new) }
 
       it "should find 1.8 Hash with symbol" do
         content =<<-EOF

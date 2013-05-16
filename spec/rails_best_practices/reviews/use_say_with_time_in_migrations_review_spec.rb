@@ -3,7 +3,7 @@ require 'spec_helper'
 module RailsBestPractices
   module Reviews
     describe UseSayWithTimeInMigrationsReview do
-      let(:runner) { Core::Runner.new(reviews: UseSayWithTimeInMigrationsReview.new) }
+      let(:runner) { Core::Runner.new(:reviews => UseSayWithTimeInMigrationsReview.new) }
 
       it "should use say with time in migrations" do
         content =<<-EOF

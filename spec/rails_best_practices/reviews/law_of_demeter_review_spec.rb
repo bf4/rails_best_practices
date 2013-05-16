@@ -3,7 +3,7 @@ require 'spec_helper'
 module RailsBestPractices
   module Reviews
     describe LawOfDemeterReview do
-      let(:runner) { Core::Runner.new(prepares: [Prepares::ModelPrepare.new, Prepares::SchemaPrepare.new], reviews: LawOfDemeterReview.new) }
+      let(:runner) { Core::Runner.new(:prepares => [Prepares::ModelPrepare.new, Prepares::SchemaPrepare.new], :reviews => LawOfDemeterReview.new) }
 
       describe "belongs_to" do
         before(:each) do

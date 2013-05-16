@@ -3,7 +3,7 @@ require 'spec_helper'
 module RailsBestPractices
   module Reviews
     describe IsolateSeedDataReview do
-      let(:runner) { Core::Runner.new(reviews: IsolateSeedDataReview.new) }
+      let(:runner) { Core::Runner.new(:reviews => IsolateSeedDataReview.new) }
 
       context "create" do
         it "should isolate seed data" do

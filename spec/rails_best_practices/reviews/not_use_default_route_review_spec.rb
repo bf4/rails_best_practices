@@ -3,7 +3,7 @@ require 'spec_helper'
 module RailsBestPractices
   module Reviews
     describe NotUseDefaultRouteReview do
-      let(:runner) { Core::Runner.new(reviews: NotUseDefaultRouteReview.new) }
+      let(:runner) { Core::Runner.new(:reviews => NotUseDefaultRouteReview.new) }
 
       describe "rails2" do
         it "should not use default route" do

@@ -3,7 +3,7 @@ require 'spec_helper'
 module RailsBestPractices
   module Reviews
     describe OveruseRouteCustomizationsReview do
-      let(:runner) { Core::Runner.new(reviews: OveruseRouteCustomizationsReview.new) }
+      let(:runner) { Core::Runner.new(:reviews => OveruseRouteCustomizationsReview.new) }
 
       describe "rails2" do
         it "should overuse route customizations" do

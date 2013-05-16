@@ -3,7 +3,7 @@ require 'spec_helper'
 module RailsBestPractices
   module Reviews
     describe NeedlessDeepNestingReview do
-      let(:runner) { Core::Runner.new(reviews: NeedlessDeepNestingReview.new) }
+      let(:runner) { Core::Runner.new(:reviews => NeedlessDeepNestingReview.new) }
 
       describe "rails2" do
         it "should needless deep nesting" do

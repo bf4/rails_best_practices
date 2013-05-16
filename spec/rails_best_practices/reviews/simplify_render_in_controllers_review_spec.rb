@@ -3,7 +3,7 @@ require 'spec_helper'
 module RailsBestPractices
   module Reviews
     describe SimplifyRenderInControllersReview do
-      let(:runner) { Core::Runner.new(reviews: SimplifyRenderInControllersReview.new) }
+      let(:runner) { Core::Runner.new(:reviews => SimplifyRenderInControllersReview.new) }
 
       it "should simplify render action view" do
         content =<<-EOF

@@ -3,7 +3,7 @@ require 'spec_helper'
 module RailsBestPractices
   module Reviews
     describe AlwaysAddDbIndexReview do
-      let(:runner) { Core::Runner.new(reviews: AlwaysAddDbIndexReview.new) }
+      let(:runner) { Core::Runner.new(:reviews => AlwaysAddDbIndexReview.new) }
 
       it "should always add db index" do
         content = <<-EOF

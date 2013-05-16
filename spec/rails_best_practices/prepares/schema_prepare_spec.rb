@@ -3,7 +3,7 @@ require 'spec_helper'
 module RailsBestPractices
   module Prepares
     describe SchemaPrepare do
-      let(:runner) { Core::Runner.new(prepares: SchemaPrepare.new) }
+      let(:runner) { Core::Runner.new(:prepares => SchemaPrepare.new) }
 
       it "should parse model attributes" do
         content =<<-EOF

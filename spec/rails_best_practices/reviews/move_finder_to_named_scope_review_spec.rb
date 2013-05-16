@@ -3,7 +3,7 @@ require 'spec_helper'
 module RailsBestPractices
   module Reviews
     describe MoveFinderToNamedScopeReview do
-      let(:runner) { Core::Runner.new(reviews: MoveFinderToNamedScopeReview.new) }
+      let(:runner) { Core::Runner.new(:reviews => MoveFinderToNamedScopeReview.new) }
 
       it "should move finder to named_scope" do
         content = <<-EOF

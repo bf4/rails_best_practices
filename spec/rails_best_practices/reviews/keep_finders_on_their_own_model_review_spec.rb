@@ -3,7 +3,7 @@ require 'spec_helper'
 module RailsBestPractices
   module Reviews
     describe KeepFindersOnTheirOwnModelReview do
-      let(:runner) { Core::Runner.new(reviews: KeepFindersOnTheirOwnModelReview.new) }
+      let(:runner) { Core::Runner.new(:reviews => KeepFindersOnTheirOwnModelReview.new) }
 
       it "should keep finders on thier own model" do
         content = <<-EOF

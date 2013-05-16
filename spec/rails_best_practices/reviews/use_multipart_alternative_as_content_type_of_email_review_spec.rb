@@ -3,7 +3,7 @@ require 'spec_helper'
 module RailsBestPractices
   module Reviews
     describe UseMultipartAlternativeAsContentTypeOfEmailReview do
-      let(:runner) { Core::Runner.new(reviews: UseMultipartAlternativeAsContentTypeOfEmailReview.new) }
+      let(:runner) { Core::Runner.new(:reviews => UseMultipartAlternativeAsContentTypeOfEmailReview.new) }
 
       before(:each) { Core::Runner.stub!(:base_path).and_return(".") }
 
